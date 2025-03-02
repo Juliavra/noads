@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/noads.css">
+    <title>NO Ads HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <input type='text' id='carpeta' name="nombre" placeholder="Paste iframe here" size="25" />
+            <button id="play_btn" onclick="cargarLink()">Aceptar</button>
+        </header>
+        <main class="main">
+            <br>HACER LINKS DE LISTA OBJETOS DRAGGABLES<br>
+            <iframe id="frame" width="260" height="115" title="YouTube video player" frameborder="4"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+
+        <sidebar class="sidebar" id="sidebar derecha">
+            Links
+            <div class="playlist" id="playlist">
+
+            </div>
+        </sidebar>
+    </div>
+
+
+    <script src="js/noads.js"></script>
+</body>
+
+</html>
