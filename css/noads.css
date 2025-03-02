@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Permanent Marker", cursive;
+    src: url('fonts/PermanentMarker-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0px;
+}
+
+:root {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Verdana, arial, Tahoma, sans-serif;
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: Garamond;
+    font-style: oblique;
+    font-weight: 900;
+    color: orange;
+    background-color: #006600;
+}
+
+h3 {
+    font-family: "Permanent Marker";
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h4 {
+    font-family: "Permanent Marker";
+    color: rgb(254, 232, 176);
+    background-color: #006600;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h5 {
+    /*PALETA COPADA*/
+  /*  background-color: rgb(249, 123, 34);*/
+    /*#F97B22*/
+    /*background-color: rgb(254, 232, 176);*/
+    /*#FEE8B0*/
+    /*background-color: rgb(124, 144, 112);*/
+    /*#9CA777  */
+    /*background-color: rgb(156, 167, 119);*/
+    background-color: #006600;
+    /*#7C9070*/
+}
+
+h6 {
+    font-family: "Permanent Marker";
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*-|-----ENLACES---------------------*/
+a {
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none;
+    color: rgb(254, 232, 176);
+    /*background-color: #006600;*/
+    text-align: center;
+    font-size: 2.3rem;
+    margin-right: 5px;
+}
+
+a:hover {
+    /*font-style: oblique;*/
+    color: white;
+    background-color: #006600;
+    /*
+    animation: tagEffect 3s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+*/
+
+    /*padding: 0px;*/
+    /*
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+*/
+}
+
+a:link {
+    color: red;
+    background-color: #006600;
+}
+
+a:active {
+    background-color: #006600;
+}
+
+a:visited {
+    color: rgb(254, 232, 176);
+}
+
+/*--------ETIQUETAS SEMANTICAS------------*/
+
+header {
+    font-family: "Permanent Marker";
+    background-color: #0d6804;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0%;
+    padding: 0%;
+    animation: tagEffect 3s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+body {
+    font-family: "Permanent Marker";
+    /*Garamond, arial, Tahoma, sans-serif */
+    color: orange;
+    background-color: #0d6804;
+}
+
+.nav__btn {
+    color: rgb(254, 232, 176);
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.nav__btn:hover {
+    color: blue;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    animation: tagEffect 3s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+main {
+   /* max-width: 800px;*/
+    width: 98%;
+    background-color: #0d6804;
+   /* margin: auto;*/
+    /* padding: 40px;*/
+}
+
+/*--------------------------------*/
+/*-------------GRID AREAS------------*/
+html {
+    font-size: 62.5%;
+    background-color: #0d6804;
+    /*10px*/
+}
+
+.contenedor {
+    font-family: "Permanent Marker", cursive;
+  /*  max-width: 90rem;
+    max-height: 180rem;*/
+    display: grid;
+    padding: 0%;
+    background-color: #0d6804;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "cabeza   cabeza   cabeza cabeza"
+        "nav       nav      nav     nav"
+        "main   main    main   sidebar"
+        "main   main    main   sidebar"
+        "main  main  main   sidebar"
+        "footer   footer    footer footer";
+    /*margin-right: auto;
+    margin-left: auto;*/
+    gap: 0.1%;
+
+}
+
+.contenedor .header {
+    font-family: "Permanent Marker";
+    grid-area: cabeza;
+      background-color: #006600;
+    color: orange;
+    height: 12vh;
+    width: 70%;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    padding: 0%;
+    /*border: red solid 2px;*/
+}
+
+.contenedor .nav {
+    font-family: "Permanent Marker", cursive;
+    grid-area: nav;
+      background-color: #006600;
+    color: white;
+    height: 6vh;
+    width: 100vh;
+    text-align: center;
+    margin-top: 0%;
+    /*border: red solid 1px;*/
+}
+
+.contenedor .main {
+    grid-area: main;
+      background-color: #006600;
+    height: 97vh;
+    /*margin-top: 1vh;*/
+    border: white solid 20px;
+    padding: 0%;
+  
+    /*overflow:scroll;*/
+}
+
+.contenedor .sidebar {
+    grid-area: sidebar;
+      background-color: #006600;
+    color: white;
+    border: red solid 20px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contenedor .bloque1 {
+    grid-area: bloque1;
+    background-color: #ffffff;
+    color: white;
+    border: red solid 2px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contenedor .bloque2 {
+    grid-area: bloque2;
+    background-color: #ffffff;
+    color: black;
+    height: 15vh;
+    border: red solid 2px;
+}
+
+.contenedor .footer {
+    grid-area: footer;
+      background-color: #006600;
+    color: orange;
+    width: 100%;
+    height: 14vh;
+    margin-top: 0%;
+    border: red solid 2px;
+    text-align: center;
+}
+
+/*--------------------------------------*/
+.header:hover {
+
+    font-size: 5rem;
+    animation: tagEffect 3s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+h5 {
+    /*PALETA COPADA*/
+    background-color: rgb(249, 123, 34);
+    /*#F97B22*/
+    background-color: rgb(254, 232, 176);
+    /*#FEE8B0*/
+    background-color: rgb(124, 144, 112);
+    /*#9CA777  */
+    background-color: rgb(156, 167, 119);
+    /*#7C9070*/
+}
+
+p+h3 {
+    font-family: "Permanent Marker", cursive;
+    color: rgba (255, 165, 0, 0.7);
+    font-size: 4rem;
+    animation: tagEffect 3s infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.footer .icono {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.sidebar_iframe {
+    margin-left: 50px;
+    /*display: inline-block;*/
+}
+
+iframe {
+    height: 800px;
+    width: 846px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.yt1{
+    width: 1825px;
+    height: 852px;
+    margin:0px;
+
+}
+
